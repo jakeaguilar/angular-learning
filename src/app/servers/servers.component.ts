@@ -20,7 +20,7 @@ export class ServersComponent implements OnInit {
   ngOnInit() {
   }
 
-  // Event Binding for "Add Server" Buttons
+  // Event Binding for "Add Server" Buttons and Server Name
   onCreateServer() {
     this.serverCreationStatus = 'Server was created! ' + this.serverName;
   }
