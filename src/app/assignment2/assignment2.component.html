@@ -1,0 +1,22 @@
+<label>Secret Password</label>
+<!-- 2 Way Binding -->
+<input
+  type="text"
+  class="form-control"
+  [(ngModel)]='secretPassword'>
+
+<!-- Property Binding Below [disabled] -->
+<!-- Event Binding Below (click) -->
+<button
+  class="btn btn-primary"
+  [disabled]="!allowNewPass"
+  (click)="onCreatePass()">Display Password</button>
+  <!-- <p [innerText]="allowNewServer"></p> -->
+<p *ngIf="passCreated">Secret password created, password is: {{secretPassword}}</p>
+
+<label>Time Stamp Number Things:</label>
+<p
+  *ngFor="let password of passwords"
+  [ngStyle]="{backgroundColor: password !== '' ? 'blue': 'transparent'}"
+  [ngClass]="{'white-text': password >= 5 }">Password Entered: {{password}}
+</p>

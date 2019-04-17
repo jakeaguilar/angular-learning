@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
 import { AssignmentComponent } from './assignment/assignment.component';
+import { Assignment2Component } from './assignment2/assignment2.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { AssignmentComponent } from './assignment/assignment.component';
     ServerComponent,
     ServersComponent,
     AssignmentComponent,
+    Assignment2Component,
 
   ],
   imports: [
