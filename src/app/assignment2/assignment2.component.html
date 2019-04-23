@@ -18,5 +18,5 @@
 <p
   *ngFor="let password of passwords"
   [ngStyle]="{backgroundColor: password !== '' ? 'blue': 'transparent'}"
-  [ngClass]="{'white-text': password >= 5 }">Password Entered: {{password}}
+  [ngClass]="{'white-text': password !== '' }">Time Stamp: {{timeStamps}} Password Entered: {{password}}
 </p>

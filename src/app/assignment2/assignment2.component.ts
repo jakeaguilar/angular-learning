@@ -31,8 +31,4 @@ export class Assignment2Component implements OnInit {
 
   }
 
-  logBtnClicks () {
-
-  }
-
 }
