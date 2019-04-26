@@ -11,7 +11,8 @@ export class Assignment2Component implements OnInit {
   passCreationStatus = 'No pass was created!';
   secretPassword = '';
   passwords = [];
-
+  timeStamps = [];
+  timestamp = '';
   // Property Binding with [disabled]
   constructor() {
     setTimeout(() => {
@@ -26,6 +27,7 @@ export class Assignment2Component implements OnInit {
   onCreatePass() {
     this.passCreated = true;
     this.passwords.push(this.secretPassword);
+    this.timeStamps.push(this.timestamp = new Date());
     this.passCreationStatus = 'Password was created! ' + this.secretPassword;
     console.log(this.secretPassword)
 
